@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'index-bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -16,9 +17,26 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader', options: { url: true } }],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: { modules: true, importLoaders: 2 },
+          },
+          { loader: 'resolve-url-loader' },
+          { loader: 'sass-loader', options: { sourceMap: true } },
+        ],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
+    hot: true,
+    port: 8030,
   },
   plugins: [
     new HtmlWebpackPlugin({
