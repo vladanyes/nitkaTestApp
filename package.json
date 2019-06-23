@@ -11,10 +11,12 @@
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
+    "js-search": "^1.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "3.0.1",
-    "react-router-dom": "^4.3.1"
+    "prop-types": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

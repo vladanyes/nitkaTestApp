@@ -1,0 +1,13 @@
+.SearchPage {
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  &__input {
+    margin-left: 8px;
+    flex: 1;
+  }
+  &__iconButton {
+    padding: 10px;
+  }
+}
+

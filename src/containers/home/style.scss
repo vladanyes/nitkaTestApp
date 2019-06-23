@@ -1,0 +1,11 @@
+.Container {
+  padding: 0 50px;
+}
+.Home {
+  &__searchBlock {
+    width: 100%;
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+  }
+}
+

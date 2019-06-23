@@ -1,6 +1,7 @@
 {
   "data": [
     {
+      "id": "los1",
       "name": "The London West Hollywood at Beverly Hills",
       "stars": "5",
       "images": [
@@ -11,6 +12,7 @@
       "city": "Лос-Анджелес"
     },
     {
+      "id": "los2",
       "name": "Beverly Wilshire, A Four Seasons Hotel",
       "stars": "5",
       "images": [
@@ -21,6 +23,7 @@
       "city": "Лос-Анджелес"
     },
     {
+      "id": "los3",
       "name": "The Beverly Hills Hotel - Dorchester Collection",
       "stars": "5",
       "images": [
@@ -31,6 +34,7 @@
       "city": "Лос-Анджелес"
     },
     {
+      "id": "los4",
       "name": "Sunset Tower Hotel",
       "stars": "5",
       "images": [
@@ -41,6 +45,7 @@
       "city": "Лос-Анджелес"
     },
     {
+      "id": "los5",
       "name": "The NoMad Los Angeles",
       "stars": "5",
       "images": [
@@ -51,6 +56,7 @@
       "city": "Лос-Анджелес"
     },
     {
+      "id": "new1",
       "name": "Soho Grand Hotel",
       "stars": "4",
       "images": [
@@ -61,6 +67,7 @@
       "city": "New York"
     },
     {
+      "id": "new2",
       "name": "Hotel Pennsylvania",
       "stars": "2",
       "images": [
@@ -71,6 +78,7 @@
       "city": "New York"
     },
     {
+      "id": "new3",
       "name": "AKA Wall Street",
       "stars": "4",
       "images": [
@@ -81,6 +89,7 @@
       "city": "New York"
     },
     {
+      "id": "new4",
       "name": "Studio Plus - Midtown Spacious Apartment",
       "stars": "2",
       "images": [
@@ -91,6 +100,7 @@
       "city": "New York"
     },
     {
+      "id": "new5",
       "name": "Arlo SoHo",
       "stars": "4",
       "images": [
