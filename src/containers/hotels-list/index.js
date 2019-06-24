@@ -20,7 +20,7 @@ const HotelsList = () => {
   const getTitle = () => {
     if (isDefaultHotels) return 'Лучшие предложения на сегодня:';
     if (!isDefaultHotels) {
-      if (state.length) return 'По вашему запросу найдено:';
+      if (hotels.length) return 'По вашему запросу найдено:';
     }
     return 'По вашему запросу ничего не найдено';
   };
