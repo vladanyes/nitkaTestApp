@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { getBestHotels } from '../mock-api/hotels';
+import { getDefaultHotels } from '../mock-api/hotels';
 
-const HotelsContext = React.createContext([]);
+const HotelsContext = React.createContext({ hotels: [], isDefaultHotels: true, isFetching: false });
 
 const HotelsProvider = props => {
-  const defaultHotels = getBestHotels(5);
-  const [state, setState] = useState(defaultHotels);
+  const defaultHotels = getDefaultHotels(5);
+  const [state, setState] = useState({
+    hotels: defaultHotels,
+    isDefaultHotels: true,
+    isFetching: false,
+  });
 
   return (
     <HotelsContext.Provider value={[state, setState]}>{props.children}</HotelsContext.Provider>

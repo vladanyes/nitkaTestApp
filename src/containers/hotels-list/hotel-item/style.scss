@@ -1,0 +1,21 @@
+.HotelItem {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 20px;
+  &:nth-of-type(3n+2) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  &:nth-of-type(n+4) {
+    margin-top: 20px;
+  }
+  &__image {
+    height: 140px;
+  }
+  &__description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}

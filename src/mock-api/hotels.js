@@ -9,7 +9,9 @@ export const searchHotels = params => {
   // search.addIndex('description');
   search.addDocuments(mockData.data);
 
-  return search.search(params);
+  return new Promise(resolve => {
+    setTimeout(() => resolve(search.search(params)), 1500);
+  });
 };
 
-export const getBestHotels = number => getShuffledArray(number, mockData.data);
+export const getDefaultHotels = number => getShuffledArray(number, mockData.data);

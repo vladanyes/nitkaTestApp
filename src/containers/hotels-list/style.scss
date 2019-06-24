@@ -1,0 +1,7 @@
+.HotelsList {
+  display: flex;
+  flex-wrap: wrap;
+  &__title {
+    width: 100%;
+  }
+}
