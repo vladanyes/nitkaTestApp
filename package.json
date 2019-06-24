@@ -10,6 +10,7 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://vladanyes.github.io/nitkaTestApp/",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
