@@ -5,11 +5,23 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, '/build'),
-    filename: 'index-bundle.js',
+    filename: 'main.js',
     publicPath: './',
+  },
+  resolve: {
+    extensions: [/* '', */ '.js', '.jsx'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+        ],
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
