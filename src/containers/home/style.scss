@@ -1,11 +1,14 @@
-.Container {
-  padding: 0 50px;
-}
 .Home {
   &__searchBlock {
-    width: 100%;
+    position: relative;
     height: 100vh;
-    background-color: lightgoldenrodyellow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://horseshoebend.com/wp-content/uploads/2012/11/hb_orange.jpg");
+  }
+  &__hotelsList {
+    padding: 0 50px;
+    margin-top: 60px;
   }
 }
 

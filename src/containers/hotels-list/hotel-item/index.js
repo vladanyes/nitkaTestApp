@@ -3,31 +3,35 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Icon from '@material-ui/core/Icon';
 
 import style from './style.scss';
 
 const HotelItem = props => {
   const {
     history,
-    hotel: { images, description, name, id },
+    hotel: { images, city, name, id, stars },
   } = props;
-  console.warn('hotel', props.hotel);
 
-  const handleClick = () => {
-    history.push(`/${id}`);
+  const renderStars = length => {
+    return Array.from({ length }, (value, index) => (
+      <Icon key={index} className={style.HotelItem__star}>
+        star_rate
+      </Icon>
+    ));
   };
+
+  const handleClick = () => history.push(`/${id}`);
 
   return (
     <Card className={style.HotelItem}>
       <CardActionArea onClick={handleClick}>
         <CardMedia className={style.HotelItem__image} image={images[0]} title={name} />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography className={style.HotelItem__name} gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
           <Typography
@@ -36,15 +40,11 @@ const HotelItem = props => {
             color="textSecondary"
             component="p"
           >
-            {description}
+            {city}
           </Typography>
+          <Typography>{renderStars(stars)}</Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions onClick={handleClick}>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 };

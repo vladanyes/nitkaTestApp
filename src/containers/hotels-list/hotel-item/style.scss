@@ -12,10 +12,10 @@
   &__image {
     height: 140px;
   }
-  &__description {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+  &__name {
+    min-height: 60px;
+  }
+  &__star {
+    color: chocolate;
   }
 }

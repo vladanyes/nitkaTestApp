@@ -7,16 +7,16 @@ import style from './style.scss';
 
 const Home = () => {
   return (
-    <HotelsProvider>
-      <div className={style.Container}>
+    <div className={style.Home}>
+      <HotelsProvider>
         <div className={style.Home__searchBlock}>
           <SearchInput />
         </div>
         <div className={style.Home__hotelsList}>
           <HotelsList />
         </div>
-      </div>
-    </HotelsProvider>
+      </HotelsProvider>
+    </div>
   );
 };
 
