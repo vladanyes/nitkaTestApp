@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'main.js',
-    publicPath: './',
+    // publicPath: './',
   },
   resolve: {
     extensions: [/* '', */ '.js', '.jsx'],
@@ -46,6 +46,7 @@ module.exports = {
     ],
   },
   devServer: {
+    contentBase: path.join(__dirname, './src'),
     historyApiFallback: true,
     hot: true,
     port: 8030,

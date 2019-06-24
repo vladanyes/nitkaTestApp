@@ -24,7 +24,7 @@ const HotelItem = props => {
     ));
   };
 
-  const handleClick = () => history.push(`/${id}`);
+  const handleClick = () => history.push(`/hotels/${id}`);
 
   return (
     <Card className={style.HotelItem}>
