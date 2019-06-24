@@ -1,0 +1,10 @@
+.BookForm {
+  text-align: center;
+  &__label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  &__button {
+    margin-top: 30px;
+  }
+}

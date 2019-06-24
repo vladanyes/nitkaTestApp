@@ -1,18 +1,28 @@
-.App {
+.Breadcrumbs {
+  padding-top: 10px;
+  padding-left: 50px;
+  text-decoration: underline;
+  font-size: 12px;
+  color: darkblue;
+  &__icon {
+    position: relative;
+    top: 7px;
+  }
+}
+
+.Hotel {
   display: flex;
-  justify-content: center;
-  &__inner {
-    padding: 2px 4px;
-    display: flex;
-    align-items: center;
-    width: 400px;
+  padding: 15px 50px 0;
+  justify-content: space-between;
+  &__form {
+    width: 25%;
+    height: 320px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: orange !important;
   }
-  &__input {
-    margin-left: 8px;
-    flex: 1;
-  }
-  &__iconButton {
-    padding: 10px;
+  &__info {
+    width: 70%;
   }
 }
 
