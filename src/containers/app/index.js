@@ -5,6 +5,7 @@ import NotFound from '../not-found';
 import Home from '../home';
 import Hotel from '../hotel';
 import { HotelsProvider } from '../../contexts/hotels-context';
+import ScrollToTop from '../../components/scroll-to-top';
 
 moment.locale('ru');
 moment.updateLocale('ru', {
@@ -15,12 +16,14 @@ const App = () => {
   return (
     <HotelsProvider>
       <Router>
-        <Switch>
-          <Redirect exact from="/" to="/search" />
-          <Route exact path="/search" component={Home} />
-          <Route exact path="/hotels/:hotelId" component={Hotel} />
-          <Route component={NotFound} />
-        </Switch>
+        <ScrollToTop>
+          <Switch>
+            <Redirect exact from="/" to="/search" />
+            <Route exact path="/search" component={Home} />
+            <Route exact path="/hotels/:hotelId" component={Hotel} />
+            <Route component={NotFound} />
+          </Switch>
+        </ScrollToTop>
       </Router>
     </HotelsProvider>
   );
