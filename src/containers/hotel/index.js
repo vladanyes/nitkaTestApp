@@ -23,7 +23,7 @@ const Hotel = props => {
       <div className={style.Breadcrumbs}>
         <Link to="/">
           <Icon className={style.Breadcrumbs__icon}>arrow_left</Icon>
-          <span>Вернуться на главную</span>
+          <span>Go back</span>
         </Link>
       </div>
       <div className={style.Hotel}>

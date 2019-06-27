@@ -22,18 +22,18 @@ const BookForm = props => {
   return (
     <div className={style.BookForm}>
       <Typography variant="h5" gutterBottom>
-        Забронировать номер:
+        Book this hotel:
       </Typography>
-      <div className={style.BookForm__label}>Выберите дату заезда</div>
+      <div className={style.BookForm__label}>Check-in Date</div>
       <DatePicker />
-      <div className={style.BookForm__label}>Выберите дату выезда</div>
+      <div className={style.BookForm__label}>Check-out Date</div>
       <DatePicker />
       <div className={style.BookForm__button}>
         <Button variant="contained" color="primary" onClick={handleButtonClick}>
-          Забронировать
+          Book
         </Button>
       </div>
-      <SimpleModal text="Успешно забронировано!" open={open} onClose={handleCloseModal} />
+      <SimpleModal text="Successfully booked!" open={open} onClose={handleCloseModal} />
     </div>
   );
 };

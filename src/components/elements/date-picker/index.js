@@ -15,7 +15,7 @@ const DatePicker = () => {
       focused={state.focused}
       onFocusChange={({ focused }) => setState(state => ({ ...state, focused }))}
       displayFormat="DD MMM YYYY"
-      placeholder="выбрать"
+      placeholder="select a date"
       numberOfMonths={1}
       id="from"
     />

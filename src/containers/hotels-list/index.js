@@ -18,11 +18,11 @@ const HotelsList = () => {
   };
 
   const getTitle = () => {
-    if (isDefaultHotels) return 'Лучшие предложения на сегодня:';
+    if (isDefaultHotels) return 'Best deals for today:';
     if (!isDefaultHotels) {
-      if (hotels.length) return 'По вашему запросу найдено:';
+      if (hotels.length) return 'Search results:';
     }
-    return 'По вашему запросу ничего не найдено';
+    return 'Nothing was found by your request';
   };
 
   useEffect(() => {
