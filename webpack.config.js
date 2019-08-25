@@ -12,6 +12,10 @@ module.exports = {
   resolve: {
     extensions: [/* '', */ '.js', '.jsx'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    alias: {
+      'react-dom$': 'react-dom/profiling',
+      'scheduler/tracing': 'scheduler/tracing-profiling',
+    },
   },
   module: {
     rules: [
